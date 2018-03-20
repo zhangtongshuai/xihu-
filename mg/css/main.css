@@ -1,0 +1,198 @@
+@charset "utf-8";
+/* CSS Document */
+*,html,body{padding:0;margin:0;}
+
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,p,pre,form,fieldset,input,textarea,img{margin:0;padding:0;list-style:none;border:0;}
+a:link{color: #000;text-decoration: none ;}
+a:visited{color: #000;text-decoration: none ;}
+a:hover{text-decoration: none ;}
+a:active{color:#000;text-decoration: none; }
+h1,h2,h3,h4,h5{font-weight:normal;color:#333;}
+h6{font-weight:normal;}
+a{color:#000;text-decoration: none;-webkit-tap-highlight-color: rgba(255, 255, 255, 0);-webkit-user-select: none;-moz-user-focus: none;-moz-user-select: none;}
+input,textarea{-webkit-tap-highlight-color:rgba(0,0,0,0);}
+input:focus, textarea:focus {outline: none;}
+table {max-width: 100%;background-color: transparent;border-collapse: collapse;border-spacing: 0;}
+.float_l{float:left;}
+.float_r{float:right;}
+.clear{ clear:both;}
+cite, code, caption, em, i {  font-style: normal; font-weight: normal;}
+
+/*管理群登录页面 login.html*/
+.container-fluid{overflow: hidden;background-image:url(../img/bj.png);background-size: 100%;display:flex; justify-content:center;align-items:center;}
+.login{width: 500px;margin: 0 auto;padding: 40px 0;background:#fff;position: relative;border-radius: 10px;}
+.login h3{font-size: 18px;text-align: center;margin-bottom: 30px;}
+.login_button{width:500px;margin-left: 118px;}
+.login .zhmm{width:400px;margin:auto;font-size:18px;}
+.login .zhmm input{padding:0 5px;width:320px;height:45px;background:#F4F4F4;border:1px solid #E2E2E2;border-radius:5px;}
+.register .zhmm {text-align:right;}
+.register .zhmm input{width:280px;}
+.login .foget{width:400px;margin:auto;font-size:14px;margin-top:15px;}
+.login .foget input{margin-left:63px;}
+.login .foget a{float:right; text-decoration:none;}
+.login .foget a:hover{ text-decoration:underline;}
+.login .login-button{width:400px; margin:auto;margin-top:20px;}
+.login .login-button input{width:400px;border-radius:100px;height:45px;background:#cc4d4d;color:#fff; text-align:center;font-size:20px; letter-spacing:15px;}
+
+/*群管理页面   index.html*/
+.header{width: 100%;height: 75px;background: #f2f2f2;}
+header{width: 1280px;height: 75px;margin: 0 auto;}
+.logo{width: 225px;margin-right: 100px;float: left;}
+.logo h1{font-size: 32px;line-height: 75px;}
+nav{width: 645px;height:50px;padding-top: 24px;float: left;}
+nav ul{}
+nav ul li{ position:relative;width: 85px;height: 50px;float: left;line-height: 26px;font-size: 17px;text-align: center;color:#666;margin-right:20px;}
+nav ul li a{display: inline-block;width: 85px;height: 50px;text-decoration: none;}
+nav ul li a:hover{color:#cc4d4d;border-bottom: 4px solid #cc4d4d;}
+nav ul li a.active{color:#cc4d4d;border-bottom: 4px solid #cc4d4d;}
+nav ul li .subnav{display:none;width:150px;background:#fff;border-radius: 0 0 4px 4px;box-shadow: 0 1px 12px 0 rgba(0,0,0,.2);position:absolute;top:50px;right:-35px;}
+nav ul li .subnav a{width:100%;padding:0 20px;font-size: 14px;display:block;border-bottom: 1px solid #eaeaea;height: 44px;    color: #444;line-height:44px;}
+nav ul li .subnav a:hover{background:#cc4d4d;color:#fff;}
+nav ul li .subnav .mingzi a{color:#000; font-weight:600;}
+nav ul li .subnav .mingzi a:hover{background:#fff;}
+#video_subnav:hover .subnav{display:block;}
+.anniu{float:right;position:relative;height:75px; z-index:10}
+.anniu .tx img{border-radius:100px;width:40px;height:40px; border:1px solid #c4c4c4  }
+.anniu .tx{width:180px;display:flex; align-items:center;height:75px; cursor:pointer;}
+.anniu .tx h1{font-size:16px;margin-left:20px;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;line-height:25px;}
+.anniu .xiala{display:none;}
+.anniu:hover .xiala{display:block;}
+.anniu .xiala{width:200px;background:#fff;padding:6px 0;border-radius: 0 0 4px 4px;box-shadow: 0 1px 12px 0 rgba(0,0,0,.2);position:absolute;top:75px;right:0;}
+.anniu .xiala a{padding:0px 20px;display:block;border-bottom: 1px solid #eaeaea;height: 44px;    color: #444;line-height:44px;}	
+.anniu .xiala a:hover{background:#cc4d4d;color:#fff;}
+.anniu .xiala .mingzi a{color:#000; font-weight:600;}
+.anniu .xiala .mingzi a:hover{background:#fff;}
+.classify{margin-bottom:10px;}
+/*.classify select {height: 40px;margin-right:20px;background-color: #f9f9f9;border: 1px solid #ddd;padding:0 15px;box-sizing: border-box;}*/
+.classify .classify-left h2{font-size: 22px;font-weight: 600;}
+.classify input[type="text"]{width: 210px;height: 45px;margin-right: 10px;padding: 0 15px;background: #f9f9f9;border: 1px solid #ddd;box-sizing: border-box;}
+.classify input[type="button"]{width: 150px;height: 45px; margin-right: 10px;background: #cc4d4d;border: none;color: #fff;font-size: 14px;}
+.contant{width: 1280px;overflow: hidden;margin: 0 auto;margin-top: 40px;padding-bottom:40px;}
+.contant h4{margin-bottom: 15px}
+.contant h5{margin-bottom: 15px}
+.contant table{width: 1280px;margin-bottom: 20px}
+.contant table thead tr th{height:45px;background: #f9f9f9;border: 1px solid #e9ecf3;text-align: center;font-size: 15px;}
+.contant table thead tr .th1{width: 250px;}
+.contant table thead tr .th2{width: 175px;}
+.contant table thead tr .click{color: #317ef3;cursor:pointer}
+.contant table tbody tr td{height: 50px;border: 1px solid #e9ecf3;text-align: center;font-size: 14px;padding: 15px 0;}
+.contant table tbody tr td a.link{
+    color: #317ef3;}
+.contant table tbody tr td img{border-radius: 100px;width: 40px;height: 40px;border: 1px solid #c4c4c4;}
+.contant table tbody tr td img.banner{width:180px;height:81px;border-radius:0;border:none;}
+.contant table tbody tr td .edit{padding: 3px 10px;color: #f44e4e;cursor:pointer;}
+.contant table tbody tr td .normal{padding: 3px 10px;color: #636b6f;cursor:pointer;}
+.contant table tbody tr td .weak{padding: 3px 10px;color: #999;cursor:pointer;}
+.contant table tbody tr td .add-ewm{padding: 3px 10px;color: #cb6b0d;cursor: pointer;}
+
+.pagination {height: 40px;margin: 20px 0;border-left: 1px solid #dddddd;}
+.pagination li {display: inline;}
+.pagination a, .pagination span {float: left;padding: 0 14px;line-height: 38px;text-decoration: none;background-color: #ffffff;border: 1px solid #dddddd;border-left-width: 0;}
+.pagination .disabled span, .pagination .disabled a, .pagination .disabled a:hover {color: #999999;cursor: default;background-color: transparent;}
+.pagination a:hover, .pagination .active a, .pagination .active span {background-color: #f5f5f5;}
+.pagination .active a, .pagination .active span {color: #999999;cursor: default;}
+
+#dialog{z-index:11;width:100%;height:100%;display: none; position:fixed;top:0;background:rgba(0,0,0,0.5)}
+.animated-con{width:100%;height:100%;display:flex;align-items: center;justify-content: center;}
+.animated-con-con{width: 450px;position:relative;background-color: #ffffff;border-radius: 3px;}
+
+.dialogTop{margin:0 auto;padding:10px 0;text-align:right;   position: absolute;width: 20px;top:3px;right: 15px;cursor: pointer}
+.dialogIco{ border-bottom:1px dotted #ccc;margin-left: 20px; font-size:15px;line-height:45px; }
+.editInfos{padding:0 0 10px 0;}
+.editInfos li{width:90%;margin:8px auto auto;text-align: center;}
+.editInfos li span{float:left;width:70px; text-align:right; line-height:29px}
+.editInfos li input.ipt{float:left;width:320px;border:1px solid #ccc;padding:5px;border-radius:3px;margin-left:10px;}
+.editInfos li input#ipt1,.editInfos li input#ipt2{border:0;box-shadow:none;}
+.editInfos li input.ipt:focus{outline:none;border-color:#66afe9;box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);-webkit-box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);}
+.editInfos li input.submitBtn{width:150px;height:35px;line-height:30px;border-radius:3px;text-align:center;background-color:#cc4d4d;color:#fff;}
+.editInfos li select{float:left;width:320px;border:1px solid #ccc;padding:5px;border-radius:3px;margin-left:10px;}
+.editInfos li textarea.ipt{width:320px;height: 60px; float:left;border:1px solid #ccc;padding:5px;border-radius:3px;margin:0 0 10px 10px;}
+/*筛选*/
+.screen{padding:15px ; background: #f9f9f9;  border: 1px solid #e9ecf3;margin-bottom:20px;}
+.screen .screen1{}
+.screen .screen1 h1{font-size:15px;line-height:31px; font-weight:600;float:left;margin-right:15px;}
+.screen .screen1 a{padding:5px 10px;background:none;font-size:14px;display:block; float:left;margin-right:20px; cursor:pointer;}
+.screen .screen1 a.active{background:#cc4d4d;color:#fff;}
+.screen .screen2{margin-top:15px;}
+.screen .screen2 input{width: 330px;height: 45px;padding: 0 15px;background: #f9f9f9;border: 1px solid #ddd;box-sizing: border-box;}
+.screen .screen2 h1{line-height:45px;}
+.screen .screen3{margin-top:15px;}
+.screen .screen3 h1{line-height:45px;}
+.screen .screen3 input{width: 155px;height: 45px;padding: 0 15px;background: #f9f9f9;border: 1px solid #ddd;box-sizing: border-box;}
+.screen .screen1 button{width: 80px;height: 35px;margin-left: 49px;background: #cc4d4d;border: none;color: #fff;font-size: 14px;}
+
+.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
+.ui-timepicker-div dl { text-align: left; }
+.ui-timepicker-div dl dt { float: left; clear:left; padding: 0 0 0 5px; }
+.ui-timepicker-div dl dd { margin: 0 10px 10px 45%; }
+.ui-timepicker-div td { font-size: 90%; }
+.ui-tpicker-grid-label { background: none; border: none; margin: 0; padding: 0; }
+.ui-timepicker-rtl{ direction: rtl; }
+.ui-timepicker-rtl dl { text-align: right; padding: 0 5px 0 0; }
+.ui-timepicker-rtl dl dt{ float: right; clear: right; }
+.ui-timepicker-rtl dl dd { margin: 0 45% 10px 10px; }
+
+.my_left {width: 21%;float: left;text-align: center;background: #f3f3f3;}
+.my_left_bot li{border-bottom:1px solid #fff;}
+.my_left_bot li a{line-height:50px;font-size:15px;display:block;border-left: 4px solid #f3f3f3;border-right: 4px solid #f3f3f3;}
+.my_left_bot li a.active{background: #cc4d4d;color:#fff;border-left: 4px solid #cc4d4d;border-right: 4px solid #cc4d4d;}
+.my_left_bot li:hover a{background: #cc4d4d;color:#fff;border-left: 4px solid #cc4d4d;border-right: 4px solid #cc4d4d;}
+.my_left h1 {padding: 0 30px;line-height: 55px;font-size: 17px;border-bottom: 1px solid #fff;}
+.my_left input{width: 150px;height: 45px;margin-left: 10px;background: #cc4d4d;border: none;color: #fff;font-size: 16px;}
+
+.my_right {background: #f3f3f3;width: 75%;padding: 25px 2%;float: right;}
+.my_right h1 {font-size: 17px;padding: 0 20px 10px 0;border-bottom: 1px solid #807e7e;margin-bottom: 20px;}
+.my_right table{width:921px;}
+.my_right table td{background:#fff;}
+.my_right table tbody tr td span {padding: 3px 10px;color: #999; cursor:pointer}
+
+.my_right .shuoming{padding-left:15px;margin-bottom:20px;}
+.my_right .shuoming ul li{ list-style-type:disc;color: #666666;}
+.my_right .shaixuan{margin-bottom:20px;}
+.my_right .shaixuan .input-group{width:289px;float: left;margin-right: 10px;}
+.my_right .shaixuan input[type="text"]{float: left;width: 210px;height: 45px;margin-right: 10px;padding: 0 15px;background: #f9f9f9;border: 1px solid #ddd;box-sizing: border-box;}
+.my_right .shaixuan input[type="button"]{width: 150px;height: 45px;margin-left: 10px;background: #cc4d4d;border: none;color: #fff;font-size: 15px;}
+.my_right .shaixuan select{float: left;width: 100px;height: 45px;padding: 0 15px;background: #f9f9f9;border: 1px solid #ddd;margin-right:10px;}
+.my_right .shaixuan #files{float: left;width: 210px;  height: 45px;margin:0 10px;border: 1px solid #ddd;}
+.my_right .shaixuan #confirmAdd{float:left;}
+
+.my_right .add-cont, .add-name, .add-info {
+    /*width: 500px;*/
+    overflow: hidden;
+}
+.my_right .add-name span {display: inline-block;  width: 70px;  height: 40px;  line-height: 40px;  float: left;  text-align: right;  font-size: 14px;}
+.my_right .add-name input {width: 650px;  height: 40px;  padding: 0 15px;  background: #f9f9f9;  border: 1px solid #ddd;  float: left;  box-sizing: border-box;  margin-left: 10px;  margin-bottom:5px;}
+.my_right .tijiao button {display: block;  width: 150px;  height: 45px;  line-height: 45px;  margin-left: 80px;  background: #cc4d4d;  border: none;  color: #fff;  font-size: 16px;  border-radius: 2px;  margin-top: 20px;float: left;  }
+
+.glyphicon-remove{background:url(../img/glyphicon-remove.png) 2px 2px no-repeat;}
+.glyphicon-calendar{background:url(../img/glyphicon-remove.png) -28px 2px no-repeat;}
+.glyphicon-arrow-left{width:28px;height:28px;background:url(../img/glyphicon-remove.png) -51px 8px no-repeat;}
+.glyphicon-arrow-right{width:28px;height:28px;background:url(../img/glyphicon-remove.png) -79px 8px no-repeat;}
+
+.glyphicon-remove:before,.glyphicon-calendar:before,.glyphicon-arrow-left:before,.glyphicon-arrow-right:before{content:none;}
+
+.contant .main_title {font-size: 17px; padding: 0 15px 15px 15px;  border-bottom: 1px solid #c4c4c4;  margin-bottom: 20px;  }
+.add-name span {display: inline-block; width: 120px; height: 40px; line-height: 40px;  float: left;  text-align: right; font-size: 15px;  }
+.add-name input {  width: 650px;  height: 40px;  padding: 0 15px;  background: #f9f9f9;  border: 1px solid #ddd;  float: left;  box-sizing: border-box;  margin-left: 10px;  margin-bottom:5px;  }
+.add-name textarea {width: 650px;  height: 200px;  margin-left: 10px;  background: #f9f9f9;  padding: 10px 15px;  line-height: 20px;  border: 1px solid #ddd;  box-sizing: border-box;  resize: none;  }
+.over button {width: 170px; height: 45px; margin:25px 0 20px 130px; background: #cc4d4d; border: none;color: #fff; font-size: 16px;  border-radius: 3px;  }
+.over button:nth-child(2) {  margin-left: 20px;  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
